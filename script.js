@@ -35,10 +35,11 @@ const checkWin = () => {
       } has WON`;
       isgameOver = true;
       document.getElementsByTagName("img")[0].style.width = "200px";
+      gameOver.play();
     }
   });
 };
-// music.play();
+music.play();
 //Game Logic
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach((element) => {
